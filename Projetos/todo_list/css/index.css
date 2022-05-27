@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html {
+    background-color: rgba(173, 216, 230, 1);
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    color: lightpink;
+    text-shadow: 2px 2px 3.5px black;
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    margin: 0;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    background-color: black;
+    color: lightpink;    
+    height: 3rem;
+    width: 25rem;
+    box-shadow: 2px 2px 5px lightpink;
+    border-color: transparent;
+}
+
+::placeholder {
+    color: lightpink;
+    opacity: 0.7;
+}
+
+.todo__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo__item {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 8px black;
+    background-color: lightpink;
+    border-radius: 50px;
+}
+
+.todo__item > div {
+    width: 80%;
+}
+
+.todo__item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: black;
+}
+
+.todo__item > input[type='text'] {
+    border: none;
+    width: 80%;
+}
+
+.todo__item > input[type='button'],
+.todo__item > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    margin:0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+.todo__item:hover > input[type='button'],
+.todo__item:hover > input[type='checkbox'] {
+    color: lightpink;
+}
+
+.todo__item > input[type='checkbox'] + div {
+    color: black;
+}
+
+.todo__item:hover > input[type='checkbox'] + div {
+    color: lightpink;
+}
+
+.todo__item > input[type='checkbox']:checked + div {
+    text-decoration:line-through;
+}
