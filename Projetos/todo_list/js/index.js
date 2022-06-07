@@ -12,8 +12,8 @@ const criarItem = (tarefa, status, indice) => {
         <div>${tarefa}</div>
         <input type="button" value="🚮" data-indice=${indice}>
         `;
-        document.getElementById('todoList').appendChild(item);
-}
+              document.getElementById('todoList').appendChild(item);
+       
 
 const limparTarefas = () => {
     const todoList = document.getElementById('todoList');
